@@ -212,4 +212,59 @@ public class Menu {
 
     }
 
+    public static void menuRemoverProduto(){
+        System.out.println("\n\n");
+        System.out.println("+-------------------------------------------+");
+        System.out.println("|       QUAL PRODUTO DESEJA REMOVER?      |");
+        System.out.println("+-------------------------------------------+");
+        System.out.println("| 1 - Livro                                 |");
+        System.out.println("| 2 - Jogo                                  |");
+        System.out.println("| 3 - Filme                                 |");
+        System.out.println("| 4 - Álbuns de música                      |");
+        System.out.println("| 5 - Brinquedos                            |");
+        System.out.println("| 0 - voltar                                |");
+        System.out.println("+-------------------------------------------+");
+    }
+
+    public static void menuRemoverBrinquedo(){
+        System.out.println("\n");
+        System.out.println("+-------------------------------------------+");
+        System.out.println("|            REMOVER BRINQUEDO:           |");
+        System.out.println("+-------------------------------------------+");
+
+    }
+
+    public static void menuRemoverAlbum(){
+        System.out.println("\n");
+        System.out.println("+-------------------------------------------+");
+        System.out.println("|            REMOVER ALBUN:           |");
+        System.out.println("+-------------------------------------------+");
+
+    }
+
+    public static void menuRemoverFilme(){
+        System.out.println("\n");
+        System.out.println("+-------------------------------------------+");
+        System.out.println("|            REMOVER FILME:           |");
+        System.out.println("+-------------------------------------------+");
+
+    }
+
+    public static void menuRemoverJogo(){
+        System.out.println("\n");
+        System.out.println("+-------------------------------------------+");
+        System.out.println("|            REMOVER JOGO:           |");
+        System.out.println("+-------------------------------------------+");
+
+    }
+
+    public static void menuRemoverLivro(){
+        System.out.println("\n");
+        System.out.println("+-------------------------------------------+");
+        System.out.println("|            REMOVER LIVRO:           |");
+        System.out.println("+-------------------------------------------+");
+
+    }
+
+
 }

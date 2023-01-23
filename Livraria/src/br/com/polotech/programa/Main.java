@@ -301,7 +301,53 @@ public class Main {
                             gerencia.pausaMenu();
                             break;
                     }
+                case 4:
+                    Menu.menuRemoverProduto();
+                    Integer opcaoRemover = sc.nextInt();
 
+                    switch (opcaoRemover) {
+                        case 1:
+
+                            Menu.menuRemoverLivro();
+                            gerencia.removerLivro();
+
+                            gerencia.pausaMenu();
+                            break;
+
+                        case 2:
+
+                            Menu.menuRemoverJogo();
+                            gerencia.removerJogo();
+
+                            gerencia.pausaMenu();
+                            break;
+
+                        case 3:
+
+
+                            Menu.menuRemoverFilme();
+                            gerencia.removerFilme();
+
+                            gerencia.pausaMenu();
+
+                            break;
+
+                        case 4:
+
+                            Menu.menuRemoverAlbum();
+                            gerencia.removerAlbum();
+
+                            gerencia.pausaMenu();
+                            break;
+
+                        case 5:
+
+                            Menu.menuRemoverBrinquedo();
+                            gerencia.removerBrinquedo();
+
+                            gerencia.pausaMenu();
+                            break;
+                    }break;
 
 
 

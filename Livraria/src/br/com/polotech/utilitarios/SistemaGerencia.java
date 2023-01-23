@@ -849,11 +849,117 @@ public class SistemaGerencia {
             brinquedo.setDataCadastro(dataHora.format(formtData));
             brinquedo.setHoraCadastro(dataHora.format(formtHora));
 
+    }
 
+    public void removerLivro(){
 
+        Scanner sc = new Scanner(System.in);
+
+        livros.forEach(System.out::println);
+
+        System.out.print("\nDigite o ID do produto para ser removido: # ");
+
+        Integer idBusca = sc.nextInt();
+
+        sc.nextLine();
+
+        livros.removeIf(livro -> livro.getId().equals(idBusca));
+
+        System.out.println("\nProduto Removido!");
+
+        System.out.println("\nLISTA ATUAL DE PRODUTOS EM ESTOQUE:");
+
+        livros.forEach(System.out::println);
 
     }
 
+    public void removerJogo(){
+
+        Scanner sc = new Scanner(System.in);
+
+        jogos.forEach(System.out::println);
+
+        System.out.print("\nDigite o ID do produto para ser removido: # ");
+
+        Integer idBusca = sc.nextInt();
+
+        sc.nextLine();
+
+        jogos.removeIf(jogo -> jogo.getId().equals(idBusca));
+
+        System.out.println("\nProduto Removido!");
+
+        System.out.println("\nLISTA ATUAL DE PRODUTOS EM ESTOQUE:");
+
+        jogos.forEach(System.out::println);
+
+    }
+
+    public void removerFilme(){
+
+        Scanner sc = new Scanner(System.in);
+
+        filmes.forEach(System.out::println);
+
+        System.out.print("\nDigite o ID do produto para ser removido: # ");
+
+        Integer idBusca = sc.nextInt();
+
+        sc.nextLine();
+
+        filmes.removeIf(fil -> fil.getId().equals(idBusca));
+
+        System.out.println("\nProduto Removido!");
+
+        System.out.println("\nLISTA ATUAL DE PRODUTOS EM ESTOQUE:");
+
+        filmes.forEach(System.out::println);
+
+    }
+
+    public void removerAlbum(){
+
+        Scanner sc = new Scanner(System.in);
+
+        albunsDemusica.forEach(System.out::println);
+
+        System.out.print("\nDigite o ID do produto para ser removido: # ");
+
+        Integer idBusca = sc.nextInt();
+
+        sc.nextLine();
+
+        albunsDemusica.removeIf(alb -> alb.getId().equals(idBusca));
+
+        System.out.println("\nProduto Removido!");
+
+        System.out.println("\nLISTA ATUAL DE PRODUTOS EM ESTOQUE:");
+
+        albunsDemusica.forEach(System.out::println);
+
+    }
+
+    public void removerBrinquedo(){
+
+        brinquedos.forEach(System.out::println);
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("\nDigite o ID do produto para ser removido: #");
+
+        Integer idBusca = sc.nextInt();
+
+        sc.nextLine();
+
+        brinquedos.removeIf(brinq -> brinq.getId().equals(idBusca));
+
+        System.out.println("\nProduto Removido!");
+
+        System.out.println("\nLISTA ATUAL DE PRODUTOS EM ESTOQUE:");
+
+        brinquedos.forEach(System.out::println);
+
+    }
 
 
     public void pausaMenu(){
