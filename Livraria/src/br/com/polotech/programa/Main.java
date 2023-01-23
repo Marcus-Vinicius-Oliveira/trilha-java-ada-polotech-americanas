@@ -348,16 +348,56 @@ public class Main {
                             gerencia.pausaMenu();
                             break;
                     }break;
+                case 5:
+                    Menu.menuVendaProduto();
+                    Integer opcaoVender = sc.nextInt();
 
+                    switch (opcaoVender) {
+                        case 1:
 
+                            Menu.menuVendaLivro();
+                            gerencia.venderLivro();
+                            //gerencia.pausaMenu();
+                            break;
 
+                        case 2:
+
+                            Menu.menuVendaJogos();
+                            gerencia.venderJogo();
+
+                            //gerencia.pausaMenu();
+                            break;
+
+                        case 3:
+
+                            Menu.menuVendaFilme();
+                            gerencia.venderFilme();
+
+                            //gerencia.pausaMenu();
+
+                            break;
+
+                        case 4:
+
+                            Menu.menuVendaAlbuns();
+                            gerencia.venderAlbum();
+
+                            //gerencia.pausaMenu();
+                            break;
+
+                        case 5:
+
+                            Menu.menuVendaBrinquedo();
+                            gerencia.venderBrinquedo();
+
+                            //gerencia.pausaMenu();
+                            break;
+                    }break;
 
                 default:
                     System.out.println("Voltando ao menu principal...");
 
             }
-
-
 
         } while (opcao != 0);
     }

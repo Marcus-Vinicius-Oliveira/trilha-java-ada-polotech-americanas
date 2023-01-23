@@ -10,9 +10,13 @@ import java.util.Scanner;
 
 public class SistemaGerencia {
 
+    Double valorCaixa = 1000.00;
+
     List<Livro> livros = new ArrayList<>();
     List<Jogo> jogos = new ArrayList<>();
     List<Filme> filmes = new ArrayList<>();
+
+
 
     List<AlbumDeMusica> albunsDemusica = new ArrayList<>();
 
@@ -961,6 +965,155 @@ public class SistemaGerencia {
 
     }
 
+    public void venderBrinquedo(){
+
+        brinquedos.forEach(System.out::println);
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("\nDigite o ID do brinquedo a ser vendido:");
+
+        Integer idBusca = sc.nextInt();
+
+        sc.nextLine();
+
+        for (Brinquedo brinquedo: brinquedos) {
+            if(idBusca.equals(brinquedo.getId())){
+                brinquedos.remove(brinquedo);
+                valorCaixa += brinquedo.getPreco();
+                break;
+            }
+        }
+
+        System.out.println("Operação realizada!\n");
+
+        System.out.println("Saldo atual em caixa é de R$ \n" + valorCaixa);
+
+        System.out.println("Nova listagem de brinquedos em estoque:\n");
+
+        brinquedos.forEach(System.out::println);
+
+    }
+
+    public void venderAlbum(){
+
+        albunsDemusica.forEach(System.out::println);
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("\nDigite o ID do álbum a ser vendido:");
+
+        Integer idBusca = sc.nextInt();
+
+        sc.nextLine();
+
+        for (AlbumDeMusica albumDeMusica: albunsDemusica) {
+            if(idBusca.equals(albumDeMusica.getId())){
+                albunsDemusica.remove(albumDeMusica);
+                valorCaixa += albumDeMusica.getPreco();
+                break;
+            }
+        }
+
+        System.out.println("Operação realizada!\n");
+
+        System.out.println("Saldo atual em caixa é de R$ \n" + valorCaixa);
+
+        System.out.println("Nova listagem de álbuns em estoque:\n");
+
+        albunsDemusica.forEach(System.out::println);
+
+    }
+
+    public void venderFilme(){
+
+        filmes.forEach(System.out::println);
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("\nDigite o ID do filme a ser vendido:");
+
+        Integer idBusca = sc.nextInt();
+
+        sc.nextLine();
+
+        for (Filme filme: filmes) {
+            if(idBusca.equals(filme.getId())){
+                filmes.remove(filme);
+                valorCaixa += filme.getPreco();
+                break;
+            }
+        }
+
+        System.out.println("Operação realizada!\n");
+
+        System.out.println("Saldo atual em caixa é de R$ \n" + valorCaixa);
+
+        System.out.println("Nova listagem de filmes em estoque:\n");
+
+        filmes.forEach(System.out::println);
+
+    }
+
+    public void venderJogo(){
+
+        jogos.forEach(System.out::println);
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("\nDigite o ID do jogo a ser vendido:");
+
+        Integer idBusca = sc.nextInt();
+
+        sc.nextLine();
+
+        for (Jogo jogo: jogos) {
+            if(idBusca.equals(jogo.getId())){
+                jogos.remove(jogo);
+                valorCaixa += jogo.getPreco();
+                break;
+            }
+        }
+
+        System.out.println("Operação realizada!\n");
+
+        System.out.println("Saldo atual em caixa é de R$ \n" + valorCaixa);
+
+        System.out.println("Nova listagem de jogos em estoque:\n");
+
+        livros.forEach(System.out::println);
+
+    }
+
+    public void venderLivro(){
+
+        livros.forEach(System.out::println);
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("\nDigite o ID do livro a ser vendido:");
+
+        Integer idBusca = sc.nextInt();
+
+        sc.nextLine();
+
+        for (Livro livro: livros) {
+            if(idBusca.equals(livro.getId())){
+                livros.remove(livro);
+                valorCaixa += livro.getPreco();
+                break;
+            }
+        }
+
+        System.out.println("Operação realizada!\n");
+
+        System.out.println("Saldo atual em caixa é de R$ \n" + valorCaixa);
+
+        System.out.println("Nova listagem de livros em estoque:\n");
+
+        livros.forEach(System.out::println);
+
+    }
 
     public void pausaMenu(){
         Scanner sc = new Scanner(System.in);

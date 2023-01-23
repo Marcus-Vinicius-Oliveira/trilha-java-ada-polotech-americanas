@@ -19,7 +19,6 @@ public class Menu {
         System.out.println("| 3 - Editar produto                        |");
         System.out.println("| 4 - Remover produto                       |");
         System.out.println("| 5 - Venda do produto                      |");
-        System.out.println("| 6 - Financeiro                            |");
         System.out.println("| 0 - Sair                                  |");
         System.out.println("+-------------------------------------------+");
 
@@ -226,6 +225,8 @@ public class Menu {
         System.out.println("+-------------------------------------------+");
     }
 
+
+
     public static void menuRemoverBrinquedo(){
         System.out.println("\n");
         System.out.println("+-------------------------------------------+");
@@ -265,6 +266,68 @@ public class Menu {
         System.out.println("+-------------------------------------------+");
 
     }
+
+    public static void menuVendaProduto(){
+        System.out.println("\n\n");
+        System.out.println("+-------------------------------------------+");
+        System.out.println("|       QUAL PRODUTO DESEJA VENDER?         |");
+        System.out.println("+-------------------------------------------+");
+        System.out.println("| 1 - Livro                                 |");
+        System.out.println("| 2 - Jogo                                  |");
+        System.out.println("| 3 - Filme                                 |");
+        System.out.println("| 4 - Álbuns de música                      |");
+        System.out.println("| 5 - Brinquedos                            |");
+        System.out.println("| 0 - voltar                                |");
+        System.out.println("+-------------------------------------------+");
+
+    }
+
+    public static void menuVendaLivro(){
+        System.out.println("\n");
+        System.out.println("+-------------------------------------------+");
+        System.out.println("|        LISTA DE LIVROS PARA VENDA       |");
+        System.out.println("+-------------------------------------------+");
+        System.out.println("");
+
+    }
+
+    public static void menuVendaJogos(){
+        System.out.println("\n");
+        System.out.println("+-------------------------------------------+");
+        System.out.println("|        LISTA DE JOGOS PARA VENDA       |");
+        System.out.println("+-------------------------------------------+");
+        System.out.println("");
+
+    }
+
+    public static void menuVendaFilme(){
+        System.out.println("\n");
+        System.out.println("+-------------------------------------------+");
+        System.out.println("|        LISTA DE FILMES PARA VENDA       |");
+        System.out.println("+-------------------------------------------+");
+        System.out.println("");
+
+    }
+
+    public static void menuVendaAlbuns(){
+        System.out.println("\n");
+        System.out.println("+-------------------------------------------+");
+        System.out.println("|        LISTA DE ALBUNS PARA VENDA       |");
+        System.out.println("+-------------------------------------------+");
+        System.out.println("");
+
+    }
+
+    public static void menuVendaBrinquedo(){
+        System.out.println("\n");
+        System.out.println("+-------------------------------------------+");
+        System.out.println("|        LISTA DE BRINQUEDOS PARA VENDA       |");
+        System.out.println("+-------------------------------------------+");
+        System.out.println("");
+
+    }
+
+
 
 
 }

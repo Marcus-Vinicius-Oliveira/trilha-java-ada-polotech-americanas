@@ -56,6 +56,16 @@ public class Brinquedo extends Produto {
         this.horaCadastro = horaCadastro;
     }
 
+
+
+    public Double venderBrinquedo(Double precoVenda){
+
+        Double soma = getPreco() + precoVenda;
+
+        return soma;
+    }
+
+
     @Override
     public String toString(){
         return "\nID #" + getId()
